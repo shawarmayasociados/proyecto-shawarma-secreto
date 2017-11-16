@@ -27,13 +27,17 @@
          
           
           <form action="/" method="post" runat="server" cssclass ="of-cont">
-        <asp:DropDownList ID="DropDownList1" cssclass="select" runat="server"></asp:DropDownList>
-        <asp:DropDownList ID="DropDownList2" cssclass="select" runat="server"></asp:DropDownList>
-        <asp:DropDownList ID="DropDownList3"  cssclass="select" runat="server"></asp:DropDownList>
+        <asp:DropDownList ID="DropDownList1" cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+        <asp:DropDownList ID="DropDownList2" cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged"></asp:DropDownList>
+        <asp:DropDownList ID="DropDownList3"  cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged"></asp:DropDownList>
         <asp:DropDownList ID="DropDownList4" cssclass="select"  runat="server"></asp:DropDownList>
+
+              <asp:Button ID="Filtrar" runat="server" cssclass="filter-button" Text="Filtrar" OnClick="Filtrar_Click" />
         </form>
+
+
          
-           <div id="filter-button"><p>Filtrar</p></div>
+          
        
     </div>
    </div>
