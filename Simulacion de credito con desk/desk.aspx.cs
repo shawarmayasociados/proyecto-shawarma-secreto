@@ -90,12 +90,12 @@ public partial class Default2 : System.Web.UI.Page
                 DropDownList3.Items.Insert(0, "Cuotas");
 
                 string[] tasa = new string[6];
-                tasa[0] = "1,0";
-                tasa[1] = "1,4";
-                tasa[2] = "1,5";
-                tasa[3] = "1,9";
-                tasa[4] = "2,0";
-                tasa[5] = "2,5";
+                tasa[0] = "1.0";
+                tasa[1] = "1.4";
+                tasa[2] = "1.5";
+                tasa[3] = "1.9";
+                tasa[4] = "2.0";
+                tasa[5] = "2.5";
 
                 int c = 0;
 
@@ -114,7 +114,7 @@ public partial class Default2 : System.Web.UI.Page
                     c++;
                 }
                 DropDownList4.Items.Insert(0, "Tasa");
-
+                
             }
             else
         {
@@ -123,11 +123,30 @@ public partial class Default2 : System.Web.UI.Page
 
 
     }
+
     protected void logout(object sender,EventArgs e)
     {
         
         Response.Redirect("~/logout.aspx");
     }
 
-   
+
+
+    protected void Filtrar_Click(object sender, EventArgs e)
+    {
+
+    }
+    string consulta = "select* from ignacio.simulacion" ;
+
+
+
+
+
+
+
+    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        string consultabanco = "where idbanco in (select idbanco from ignacio.banco where nombre = @bancoseleccionado)";  
+         
+    }
 }
