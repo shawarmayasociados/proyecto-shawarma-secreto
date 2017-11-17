@@ -27,6 +27,7 @@
    <div id="cont-selector">
        <div id="cont-select">
          
+<<<<<<< HEAD
          
           <form action="/" method="post" runat="server" cssclass="uno">
         <asp:DropDownList ID="DropDownList1" cssclass="select" runat="server"></asp:DropDownList>
@@ -34,9 +35,25 @@
         <asp:DropDownList ID="DropDownList3"  cssclass="select" runat="server"></asp:DropDownList>
         <asp:DropDownList ID="DropDownList4" cssclass="select"  runat="server"></asp:DropDownList>
         <asp:Button ID="Button1" runat="server" Text="Filtrar" cssclass="filter-button"/>
+=======
+          
+          <form action="/" method="post" runat="server" cssclass ="of-cont">
+        <asp:DropDownList ID="DropDownList1" cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+        <asp:DropDownList ID="DropDownList2" cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged"></asp:DropDownList>
+        <asp:DropDownList ID="DropDownList3"  cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged"></asp:DropDownList>
+        <asp:DropDownList ID="DropDownList4" cssclass="select"  runat="server"></asp:DropDownList>
+
+              <asp:Button ID="Filtrar" runat="server" cssclass="filter-button" Text="Filtrar" OnClick="Filtrar_Click" />
+>>>>>>> c911ab66cab43327f9574f409f16c92acbdd7b66
         </form>
+
+
          
+<<<<<<< HEAD
      </div>
+=======
+          
+>>>>>>> c911ab66cab43327f9574f409f16c92acbdd7b66
        
     
    </div>
