@@ -13,6 +13,8 @@
 </head>
 <body>
 
+     <form id="form1" runat="server">
+
      <nav> <!-- Creamos un navegador-->
         <ul> <!-- añadimos una lista que contendra nuestras opciones de navegación-->
 
@@ -28,15 +30,12 @@
        <div id="cont-select">
          
 
-          <form action="/" method="post" runat="server" >
-        <asp:DropDownList ID="DropDownList1" cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+        <asp:DropDownList ID="DropDownList1" cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True"></asp:DropDownList>
         <asp:DropDownList ID="DropDownList2" cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged"></asp:DropDownList>
         <asp:DropDownList ID="DropDownList3"  cssclass="select" runat="server" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged"></asp:DropDownList>
-        <asp:DropDownList ID="DropDownList4" cssclass="select"  runat="server"></asp:DropDownList>
+        <asp:DropDownList ID="DropDownList4" cssclass="select"  runat="server" OnSelectedIndexChanged="DropDownList4_SelectedIndexChanged"></asp:DropDownList>
 
             <asp:Button ID="Filtrar" runat="server" cssclass="filter-button" Text="Filtrar" OnClick="Filtrar_Click" />
-
-        </form>     
 
      </div>
 
@@ -45,5 +44,18 @@
        
     
    </div>
+         <asp:GridView ID="GridView2" runat="server" cssclass="grilla" AutoGenerateColumns="False">
+             <Columns>
+                 <asp:BoundField HeaderText="IdSimulación" />
+                 <asp:BoundField HeaderText="Tasa" />
+                 <asp:BoundField HeaderText="Cuota" />
+                 <asp:BoundField HeaderText="Monto" />
+                 <asp:BoundField HeaderText="Banco" />
+                 <asp:BoundField HeaderText="Cliente" />
+                 <asp:BoundField HeaderText="Fecha" />
+                 <asp:BoundField HeaderText="Monto Final" />
+             </Columns>
+         </asp:GridView>
+     </form>
 </body>
 </html>
