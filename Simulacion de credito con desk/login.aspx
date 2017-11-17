@@ -8,6 +8,7 @@
     <title>Comparación de Creditos Online</title>
     <!-- El style de login-->
     <link rel="stylesheet" href="Content/style.css"/>
+    <link href="Content/font.css" rel="stylesheet" />
    
 
 </head>
