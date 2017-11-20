@@ -20,6 +20,8 @@ nav ul {
     width: 100%;
     display: block;
     height: 100%;
+    top: 3px;
+    left: -1px;
 }
 
     nav ul li {
